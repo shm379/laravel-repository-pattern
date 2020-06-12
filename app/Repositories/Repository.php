@@ -43,9 +43,9 @@ abstract class Repository
         return $this->model->update($data);
     }
 
-    public function delete($model)
+    public function delete($id)
     {
-        return $model->delete();
+        return $this->model->delete($id);
     }
 
     public function exists($id)
